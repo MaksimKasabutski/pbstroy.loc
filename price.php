@@ -38,7 +38,7 @@
                     <div class="price-table-inner-section">Битумная черепица</div>
                     <div class="price-table-inner-section">от 16 у.е. м<sup>3</sup></div>
                 </div>  
-                <div class="price-table-section">
+                <div class="price-table-section left-border">
                     <div class="price-table-inner-section">Керамическая черепица</div>
                     <div class="price-table-inner-section">от 20 у.е. м<sup>3</sup></div>
                 </div>  
@@ -59,7 +59,7 @@
                     <div class="price-table-inner-section">Керамзитобетонные <br>блоки</div>
                     <div class="price-table-inner-section">20 у.е. м<sup>3</sup></div>
                 </div>  
-                <div class="price-table-section">
+                <div class="price-table-section left-border">
                     <div class="price-table-inner-section">Кирпичные 380мм</div>
                     <div class="price-table-inner-section">от 40 у.е. м<sup>3</sup></div>
                 </div>  
@@ -80,7 +80,7 @@
                     <div class="price-table-inner-section">Ленточный фундамент</div>
                     <div class="price-table-inner-section">от 50 у.е. м<sup>3</sup></div>
                 </div>  
-                <div class="price-table-section">
+                <div class="price-table-section left-border">
                     <div class="price-table-inner-section">Плитный фундамент</div>
                     <div class="price-table-inner-section">от 50 у.е. м<sup>3</sup></div>
                 </div>  

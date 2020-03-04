@@ -27,17 +27,19 @@
         </div>
     </section>
     <section>
-        <div class="services-nav-front"></div>
-        <ul class="nav-list">
-            <li id="nav-list-item-roofservices" class="nav-list-item"><p>Кровельные работы</p></li>
-            <li id="nav-list-item-masonryservices" class="nav-list-item"><p>Кладочные работы</p></li>
-            <li id="nav-list-item-baseservices" class="nav-list-item"><p>Фундамент</p></li>
-            <li id="nav-list-item-other" class="nav-list-item"><p>Прочее</p></li>
+        <div class="nav-front-L-services"></div>
+        <div class="nav-front-M-services"></div>
+        <ul class="nav-list services-nav-list">
+            <li id="nav-list-item-roofservices" class="nav-list-item services-nav-list-item"><p>Кровельные работы</p></li>
+            <li id="nav-list-item-masonryservices" class="nav-list-item services-nav-list-item"><p>Кладочные работы</p></li>
+            <li id="nav-list-item-baseservices" class="nav-list-item services-nav-list-item"><p>Фундамент</p></li>
+            <!--<li id="nav-list-item-other" class="nav-list-item"><p>Прочее</p></li> -->
         </ul>
     </section>
     <section class="section-container">
         <div class="service-tab service-tab-roof">
             <div class="service-item">
+            <h3>Керамическая черепица</h3>
                 <div class="service-item-left">
                     <div class="service-item-image">
                         <img src="/images/services/roof-ceramic.jpg" alt="Керамическая черепица">
@@ -47,7 +49,6 @@
                     </div>
                 </div>
                 <div class="service-item-right">
-                    <h3>Керамическая черепица</h3>
                     <ul class="service-item-pluses">
                         <li>Хорошая звукоизоляция</li>
                         <li>Достаточно минимальное очищение при использовании</li>
@@ -63,6 +64,7 @@
                 </div>
             </div>
             <div class="service-item">
+            <h3>Битумная черепица</h3>
                 <div class="service-item-left">
                     <div class="service-item-image">
                         <img src="/images/services/roof-bitum.jpg" alt="Битумная черепица">
@@ -72,7 +74,6 @@
                     </div>
                 </div>
                 <div class="service-item-right">
-                    <h3>Битумная черепица</h3>
                     <ul class="service-item-pluses">
                         <li>Не подвергается лому, поскольку пластична</li>
                         <li>Предоставляет широкие возможности для использования с любым уклоном крыши</li>
@@ -87,6 +88,7 @@
                 </div>
             </div>
             <div class="service-item">
+                <h3>Металлочерепица</h3>
                 <div class="service-item-left">
                     <div class="service-item-image">
                         <img src="/images/services/roof-metal-tile.jpg" alt="металлочерепица">
@@ -96,7 +98,6 @@
                     </div>
                 </div>
                 <div class="service-item-right">
-                    <h3>Металлочерепица</h3>
                     <ul class="service-item-pluses">
                         <li>Быстрая установка</li>
                         <li>Очень устойчива механически</li>
@@ -133,7 +134,7 @@
                         <div class="price-table-inner-section">Битумная черепица</div>
                         <div class="price-table-inner-section">от 16 у.е. м<sup>3</sup></div>
                     </div>  
-                    <div class="price-table-section">
+                    <div class="price-table-section left-border">
                         <div class="price-table-inner-section">Керамическая черепица</div>
                         <div class="price-table-inner-section">от 20 у.е. м<sup>3</sup></div>
                     </div>  
@@ -147,6 +148,7 @@
         </div>
         <div class="service-tab service-tab-masonry" style="display: none">
             <div class="service-item">
+                <h3>Газосиликатные блоки</h3>
                 <div class="service-item-left">
                     <div class="service-item-image">
                         <img src="/images/services/masonry-silicat.jpg" alt="Газосиликатный блок">
@@ -157,7 +159,6 @@
                     </div>
                 </div>
                 <div class="service-item-right">
-                    <h3>Газосиликатные блоки</h3>
                     <ul class="service-item-pluses">
                         <li>Доступная стоимость. Газосиликатные блоки стоят намного дешевле кирпича, однако обеспечивают итоговой постройке высокие эксплуатационные характеристики</li>
                         <li>Удобство и быстрота монтажа</li>
@@ -174,6 +175,7 @@
                 </div>
             </div>
             <div class="service-item">
+                <h3>Керамзитобетонные блоки</h3>
                 <div class="service-item-left">
                     <div class="service-item-image">
                         <img src="/images/services/masonry-keramzit.jpg" alt="Керамзитобетонный блок">
@@ -183,7 +185,6 @@
                     </div>
                 </div>
                 <div class="service-item-right">
-                    <h3>Керамзитобетонные блоки</h3>
                     <ul class="service-item-pluses">
                         <li>Высокая прочность, экологичность и теплопроводность</li>
                         <li>Из-за небольшого веса блоков можно сэкономить на усилении фундамента</li>
@@ -199,6 +200,7 @@
                 </div>
             </div>
             <div class="service-item">
+                <h3>Кирпич</h3>
                 <div class="service-item-left">
                     <div class="service-item-image">
                         <img src="/images/services/masonry-kirpich.jpg" alt="Кирпич">
@@ -208,7 +210,6 @@
                     </div>
                 </div>
                 <div class="service-item-right">
-                    <h3>Кирпич</h3>
                     <ul class="service-item-pluses">
                         <li>Теплопроводность. Дома, которые сделаны из кирпича всегда теплые и уютные</li>
                         <li>Статичность материала. Конструкции, возведенные из кирпича очень стойкие, поэтому материал не осядет и не потрескается</li>
@@ -246,7 +247,7 @@
                         <div class="price-table-inner-section">Керамзитобетонные <br>блоки</div>
                         <div class="price-table-inner-section">20 у.е. м<sup>3</sup></div>
                     </div>  
-                    <div class="price-table-section">
+                    <div class="price-table-section left-border">
                         <div class="price-table-inner-section">Кирпичные 380мм</div>
                         <div class="price-table-inner-section">от 40 у.е. м<sup>3</sup></div>
                     </div>  
@@ -260,6 +261,7 @@
         </div>
         <div class="service-tab service-tab-base" style="display: none">
             <div class="service-item">
+                <h3>Плитный фундамент</h3>
                 <div class="service-item-left">
                     <div class="service-item-image">
                         <img src="/images/services/base-plita.jpg" alt="Плитный фундамент">
@@ -269,7 +271,6 @@
                     </div>
                 </div>
                 <div class="service-item-right">
-                    <h3>Плитный фундамент</h3>
                     <ul class="service-item-pluses">
                         <li>Высокая несущая способность: на таких основаниях могут возводиться как одноэтажные, так и многоэтажные дома из тяжелых стройматериалов - кирпича, бетона, газосиликата</li>
                         <li>Возможность обустроить полноценный цокольный этаж</li>
@@ -285,6 +286,7 @@
                 </div>
             </div>
             <div class="service-item">
+                <h3 style="font-size: 34px">Свайно-ростверковый фундамент</h3>
                 <div class="service-item-left">
                     <div class="service-item-image">
                         <img src="/images/services/base-svai.jpg" alt="Свайно-ростверковый фундамент">
@@ -294,7 +296,6 @@
                     </div>
                 </div>
                 <div class="service-item-right">
-                    <h3 style="font-size: 34px">Свайно-ростверковый фундамент</h3>
                     <ul class="service-item-pluses">
                         <li>Удобен при строительстве дома в местности с неоднородным рельефом (например, на склоне)</li>
                         <li>Не требует большого расхода материалов</li>
@@ -334,6 +335,7 @@
                 </div>
             </div>
             <div class="service-item">
+                <h3>Ленточный фундамент</h3>
                 <div class="service-item-left">
                     <div class="service-item-image">
                         <img src="/images/services/base-lenta.jpg" alt="Ленточный фундамент">
@@ -343,7 +345,6 @@
                     </div>
                 </div>
                 <div class="service-item-right">
-                    <h3>Ленточный фундамент</h3>
                     <ul class="service-item-pluses">
                         <li>Повышенная надежность основания дома</li>
                         <li>Устойчивость к температурным деформациям</li>
@@ -382,7 +383,7 @@
                         <div class="price-table-inner-section">Ленточный фундамент</div>
                         <div class="price-table-inner-section">от 50 у.е. м<sup>3</sup></div>
                     </div>  
-                    <div class="price-table-section">
+                    <div class="price-table-section left-border">
                         <div class="price-table-inner-section">Плитный фундамент</div>
                         <div class="price-table-inner-section">от 50 у.е. м<sup>3</sup></div>
                     </div>  

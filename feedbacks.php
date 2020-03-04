@@ -25,7 +25,7 @@
 		$page = $_GET['page'];
 	}else $page = 1;
 	$count_of_feedbacks_on_page = 10; 
-	$feedback_number = ($page * $count_of_feedbacks_on_page) - $count_of_feedbacks_on_page; //с какой записи нам выводить
+	$feedback_number = ($page * $count_of_feedbacks_on_page) - $count_of_feedbacks_on_page;
 	
 
     $all_feedbacks_query = "SELECT * FROM `feedbacks` ORDER BY ID DESC LIMIT $feedback_number, $count_of_feedbacks_on_page ";
@@ -37,7 +37,7 @@
 	$total_array = mysqli_fetch_row($res);
 	$total_count_of_feedbacks = $total_array[0]; 
 
-	$str_pag = ceil($total_count_of_feedbacks / $count_of_feedbacks_on_page);
+	$total_pages = ceil($total_count_of_feedbacks / $count_of_feedbacks_on_page);
 
     $result = '';
     foreach ($data as $elem) {     
@@ -90,33 +90,39 @@
     </section>
     
         <?php 
-        if ($str_pag>1) {
+        if ($total_pages>1) {
             echo "<section id='pagination'>
                     <div class='pagination-field'>";
-            if (($j=$page-1)>0) {
-            echo "
-                    <div class='pagination-button pagination-next-prev-button'>
-                        <a href=feedbacks.php?page=".$j.">Пред.</a>
-                    </div>";
-            };
-            for ($i = 1; $i <= $str_pag; $i++) {
-                if ($i==$page) {
-                    echo "
-                    <div class='pagination-buttons active'>
-                        <a href=feedbacks.php?page=".$i."> ".$i." </a>
-                    </div>";
-                } else {
-                echo "
-                <div class='pagination-buttons'>
-                    <a href=feedbacks.php?page=".$i."> ".$i." </a>
-                </div>";
-                }
-            }
-            if (($j=$page+1)<=$str_pag) {
-            echo "
-                    <div class='pagination-button pagination-next-prev-button'>
-                        <a href=feedbacks.php?page=".$j.">След.</a>
-                    </div>"; 
+            for ($i = 1; $i <= $total_pages; $i++) {
+                if ($i==1 or $i==$total_pages or $i==$page-1 or $i==$page or $i==$page+1) {
+                    if ($i==$page-1 and $i!=1 and $i!=2 ) {
+                        echo "
+                        <div class='pagination-buttons'>
+                            <a> ... </a>
+                        </div>
+                        <div class='pagination-buttons'>
+                            <a href=feedbacks.php?page=".$i."> ".$i." </a>
+                        </div>";
+                    } elseif ($i==$page+1 and $i!=$total_pages and $i!=$total_pages-1) {
+                        echo "
+                        <div class='pagination-buttons'>
+                            <a href=feedbacks.php?page=".$i."> ".$i." </a>
+                        </div>
+                        <div class='pagination-buttons'>
+                            <p> ... </p>
+                        </div>";
+                    } elseif ($i==$page) {
+                        echo "
+                        <div class='pagination-buttons active'>
+                            <a> ".$i." </a>
+                        </div>";
+                    } else {
+                        echo "
+                        <div class='pagination-buttons'>
+                            <a href=feedbacks.php?page=".$i."> ".$i." </a>
+                        </div>";
+                    }
+                } 
             }
             echo "</div></section>";
         }

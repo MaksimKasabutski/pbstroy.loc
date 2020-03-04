@@ -26,10 +26,9 @@
                 <div id="line_4"></div>
             </div>
         </section>
-        <section>
+        <section id="nav-list">
             <div class="nav-front-L"></div>
             <div class="nav-front-M"></div>
-            <div class="nav-front-S"></div>
             <ul class="nav-list">
                 <li id="nav-list-item-all" class="nav-list-item"><p id="nav-list-item-p-all">Все категории</p></li>
                 <li id="nav-list-item-roof" class="nav-list-item"><p id="nav-list-item-p-roof">Кровельные работы</p></li>
@@ -66,7 +65,7 @@
                                     {
                                         $path_to_files = '/images/portfolio/'.$pre_folder_name.'/'.$folder_name;
                                         echo '
-                                        <a href="portfolio-item.php?foldername='.$path_to_files.'&objectname='.$folder_name.'" class="portfolio-item">
+                                        <a href="/portfolio-item.php?foldername='.$path_to_files.'&objectname='.$folder_name.'" class="portfolio-item">
                                             <img src="'.$path_to_files.'/0.jpg" alt="">
                                             <div class="portfolio-item-name">
                                                 <p>'.$folder_name.'</p>

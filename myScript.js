@@ -103,93 +103,70 @@ $(document).ready(function(){
   });
 });
 
-/*SERVICES NAVIGATION BAR*/
+
+
+
+/*SERVICES NAVIGATION BAR for L screen*/
 $(document).ready(function(){
   $("#nav-list-item-roofservices").click(function() {
-      $(".services-nav-front").css({'margin-left' : '47.5px', 'width' : '190px'})
+      $(".nav-front-L-services").css({'margin-left' : '90px', 'width' : '195px'})
       $(".service-tab-roof").css({'display' : 'block'})
       $(".service-tab-masonry").css({'display' : 'none'})
       $(".service-tab-base").css({'display' : 'none'})
-      $(".service-tab-other").css({'display' : 'none'})
   });
 });
 $(document).ready(function(){
   $("#nav-list-item-masonryservices").click(function() {
-      $(".services-nav-front").css({'margin-left' : '335px', 'width' : '185px'}) 
+      $(".nav-front-L-services").css({'margin-left' : '471.5px', 'width' : '185px'}) 
       $(".service-tab-roof").css({'display' : 'none'})
       $(".service-tab-masonry").css({'display' : 'block'})
       $(".service-tab-base").css({'display' : 'none'})
-      $(".service-tab-other").css({'display' : 'none'})
   });
 });
 $(document).ready(function(){
   $("#nav-list-item-baseservices").click(function() {
-      $(".services-nav-front").css({'margin-left' : '657.5px', 'width' : '110px'})
+      $(".nav-front-L-services").css({'margin-left' : '882.5px', 'width' : '115px'})
       $(".service-tab-roof").css({'display' : 'none'})
       $(".service-tab-masonry").css({'display' : 'none'})
       $(".service-tab-base").css({'display' : 'block'}) 
-      $(".service-tab-other").css({'display' : 'none'})
+  });
+}); 
+
+/*SERVICES NAVIGATION BAR for M screen*/
+$(document).ready(function(){
+  $("#nav-list-item-roofservices").click(function() {
+      $(".nav-front-M-services").css({'margin-left' : '36px', 'width' : '166px'})
+      $(".service-tab-roof").css({'display' : 'block'})
+      $(".service-tab-masonry").css({'display' : 'none'})
+      $(".service-tab-base").css({'display' : 'none'})
   });
 });
 $(document).ready(function(){
-  $("#nav-list-item-other").click(function() {
-      $(".services-nav-front").css({'margin-left' : '959px', 'width' : '77px'})
+  $("#nav-list-item-masonryservices").click(function() {
+      $(".nav-front-M-services").css({'margin-left' : '277.75px', 'width' : '157px'}) 
       $(".service-tab-roof").css({'display' : 'none'})
-      $(".service-tab-masonry").css({'display' : 'none'})
+      $(".service-tab-masonry").css({'display' : 'block'})
       $(".service-tab-base").css({'display' : 'none'})
-      $(".service-tab-other").css({'display' : 'block'})
   });
 });
-
-
-/********************************************CAROUSEL*******************************/
-
-var slideWidth=800;
-$(function(){
-$('.slidewrapper').width($('.slidewrapper').children().length*slideWidth);
-    $('#next_slide').click(function(){
-        nextSlide();
-    });
-    $('#prev_slide').click(function(){
-        prevSlide();
-       
-    });
-});
-
-function nextSlide(){
-    var currentSlide=parseInt($('.slidewrapper').data('current'));
-    currentSlide++;
-    if(currentSlide>=$('.slidewrapper').children().length) {
-        $('.slidewrapper').css('left',-(currentSlide-2)*slideWidth);  
-        $('.slidewrapper').append($('.slidewrapper').children().first().clone()); 
-        $('.slidewrapper').children().first().remove();
-        currentSlide--;                        
-    }
-        $('.slidewrapper').animate({left: -currentSlide*slideWidth},300).data('current',currentSlide);
-}
-
-function prevSlide(){
-    var currentSlide=parseInt($('.slidewrapper').data('current'));
-    currentSlide--;
-    if(currentSlide<0)
-    {
-        $('.slidewrapper').css('left',-(currentSlide+2)*slideWidth);  
-        $('.slidewrapper').prepend($('.slidewrapper').children().last().clone()); 
-        $('.slidewrapper').children().last().remove();
-        currentSlide++;   
-    }
-    $('.slidewrapper').animate({left: -currentSlide*slideWidth},300).data('current',currentSlide);
-}
+$(document).ready(function(){
+  $("#nav-list-item-baseservices").click(function() {
+      $(".nav-front-M-services").css({'margin-left' : '544.5px', 'width' : '99px'})
+      $(".service-tab-roof").css({'display' : 'none'})
+      $(".service-tab-masonry").css({'display' : 'none'})
+      $(".service-tab-base").css({'display' : 'block'}) 
+  });
+}); 
 
 function open_mobile_menu(){
-  var navbar_mobile_menu = document.getElementsByClassName("navbar-mobile-menu");
+  var navbar_mobile_menu = document.getElementsByClassName("navbar");
   
   var displaySetting = navbar_mobile_menu[0].style.display;
   
   if (displaySetting == 'block') { 
-    navbar_mobile_menu[0].style.display = 'none';
+      navbar_mobile_menu[0].style.display = 'none';
   }
   else { 
-    navbar_mobile_menu[0].style.display = 'block';
+      navbar_mobile_menu[0].style.display = 'block';
   }
   }

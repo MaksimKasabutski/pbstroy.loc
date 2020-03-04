@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Портфолио - Станьково - PBstroy</title>
+    <title><?php $objectname = $_GET['objectname'];
+    echo $objectname?> - Портфолио - PBstroy</title>
 	<link rel="stylesheet" href="/style.css"> 
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link href="/css/font-awesome.css" rel="stylesheet">
@@ -25,15 +26,13 @@
                 <div id="line_1"></div>
                 <div id="line_2"></div>
             </div>
-            <h1 style="font-size: 36px;"><?php echo $objectname;?></h1>
+            <h1><?php echo $objectname;?></h1>
             <div id="union_2">
                 <div id="line_3"></div>
                 <div id="line_4"></div>
             </div>
         </section>
-        <section class="container">
-        <?php 
-        ?>
+        <section id="carousel">
             <div class="viewport">
                 <ul class="slidewrapper" data-current=0>
                     <?php
@@ -51,11 +50,83 @@
                     <span><i class="fa fa-angle-right fa-3x" aria-hidden="true"></i></span>
                 </a>
             </div>
+            <div class="carousel-counter">
+                <?php 
+                echo '<span id="carousel-counter-current">1</span>/'.$count;
+                
+                ?>
+            </div>
         </section>
     </div>
     <?php include 'footer.php'?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="myScript.js"></script>
-    
+    <script>
+        var slideWidth=$('.slide').css('width').substr(0, 3);
+        var slideCount=$('.slidewrapper').children().length;
+        var currentSlide = 1;
+        $(function(){
+            currentSlide = 1;
+            $('.slidewrapper').width(slideCount*slideWidth);
+            $('#next_slide').click(nextSlideWithCounter);
+            $('#prev_slide').click(prevSlideWithCounter);
+            $(document).on('keydown', function(event) {
+                if(event.which == 39) {
+                    nextSlideWithCounter();
+                }
+            });
+            $(document).on('keydown', function(event) {
+                if(event.which == 37) {
+                    prevSlideWithCounter();
+                }
+            });
+        });
+        var nextSlideWithCounter = function(){
+                nextSlide();
+                if(currentSlide==slideCount) {
+                    currentSlide=1;
+                    document.getElementById("carousel-counter-current").innerHTML = currentSlide;
+                } else {
+                    currentSlide++;
+                    document.getElementById("carousel-counter-current").innerHTML = currentSlide;
+                }
+            }
+        var prevSlideWithCounter = function(){
+                prevSlide();
+                if(currentSlide==1) {
+                    currentSlide=slideCount;
+                    document.getElementById("carousel-counter-current").innerHTML = currentSlide;
+                } else {
+                    currentSlide--;
+                    document.getElementById("carousel-counter-current").innerHTML = currentSlide;
+                }
+            }
+
+        function nextSlide(){
+            var currentSlide=parseInt($('.slidewrapper').data('current'));
+            currentSlide++;
+            if(currentSlide>=$('.slidewrapper').children().length) {
+                $('.slidewrapper').css('left',-(currentSlide-2)*slideWidth);  
+                $('.slidewrapper').append($('.slidewrapper').children().first().clone()); 
+                $('.slidewrapper').children().first().remove();
+                currentSlide--;                    
+            }
+                $('.slidewrapper').animate({left: -currentSlide*slideWidth},300).data('current',currentSlide);   
+        }
+
+        function prevSlide(){
+            var currentSlide=parseInt($('.slidewrapper').data('current'));
+            currentSlide--;
+            if(currentSlide<0)
+            {
+                $('.slidewrapper').css('left',-(currentSlide+2)*slideWidth);  
+                $('.slidewrapper').prepend($('.slidewrapper').children().last().clone()); 
+                $('.slidewrapper').children().last().remove();
+                currentSlide++;    
+            }
+            $('.slidewrapper').animate({left: -currentSlide*slideWidth},300).data('current',currentSlide);
+            
+        }
+    </script>
 </body>
 </html>
