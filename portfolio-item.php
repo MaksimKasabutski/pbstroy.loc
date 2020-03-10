@@ -2,8 +2,11 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Строительство домов в Минске и минской области. Выполнение кладочных, кровельных и монолитных работ любой сложности.
+    Заливка фундамента под ключ и другие строительные работы. Многолетний опыт работы. Качество гарантируем!">
+    <meta name="robots" content="index, follow"/> 
     <title><?php $objectname = $_GET['objectname'];
     echo $objectname?> - Портфолио - PBstroy</title>
 	<link rel="stylesheet" href="/style.css"> 
@@ -62,6 +65,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="myScript.js"></script>
     <script>
+        $(function(){
+            var bodyWidth = $('body').width();
+            if (bodyWidth<=768) {
+                $('.slide').height($('.slide').width()/1.5);
+                $('.viewport').width($(".carousel").prop("clientWidth"));
+                $('.viewport').height($('.viewport').width()/1.5);
+            }
+        });
         var slideWidth=$('.slide').css('width').substr(0, 3);
         var slideCount=$('.slidewrapper').children().length;
         var currentSlide = 1;

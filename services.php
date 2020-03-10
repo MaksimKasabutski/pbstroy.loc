@@ -2,8 +2,11 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Услуги по выполнению кладочных, кровельных и монолитных работ любой сложности. Строительство домов в Минске и минской области. .
+    Заливка фундамента под ключ и другие строительные работы. Многолетний опыт работы. Качество гарантируем!">
+    <meta name="robots" content="index, follow"/> 
     <title>Услуги - PBstroy - Строительство домов под ключ</title>
 	<link rel="stylesheet" href="/style.css"> 
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
@@ -143,7 +146,7 @@
                         <div class="price-table-inner-section">от 16 у.е. м<sup>3</sup></div>
                     </div>    
                 </div>
-                <p class="price-note">* Внимамание, цены в иностранной валюте указаны справочно. Все расчёты осуществляются в белорусских рублях в соответствии с законодательством РБ.</p>
+                <p class="price-note">* Внимание, цены в иностранной валюте указаны справочно. Все расчёты осуществляются в белорусских рублях в соответствии с законодательством РБ.</p>
             </div>
         </div>
         <div class="service-tab service-tab-masonry" style="display: none">
@@ -256,7 +259,7 @@
                         <div class="price-table-inner-section">75 у.е. м<sup>3</sup></div>
                     </div>    
                 </div>
-                <p class="price-note">* Внимамание, цены в иностранной валюте указаны справочно. Все расчёты осуществляются в белорусских рублях в соответствии с законодательством РБ.</p>
+                <p class="price-note">* Внимание, цены в иностранной валюте указаны справочно. Все расчёты осуществляются в белорусских рублях в соответствии с законодательством РБ.</p>
             </div>
         </div>
         <div class="service-tab service-tab-base" style="display: none">
@@ -392,7 +395,7 @@
                         <div class="price-table-inner-section">8 у.е. шт.</div>
                     </div>    
                 </div>
-                <p class="price-note">* Внимамание, цены в иностранной валюте указаны справочно. Все расчёты осуществляются в белорусских рублях в соответствии с законодательством РБ.</p>
+                <p class="price-note">* Внимание, цены в иностранной валюте указаны справочно. Все расчёты осуществляются в белорусских рублях в соответствии с законодательством РБ.</p>
             </div>
         </div>
     </section>

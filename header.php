@@ -1,7 +1,7 @@
 <header id="header">
     <div class="container">
         <div class="logo">
-            <a href="/index.php">
+            <a href="/">
                 <img class="logo-image" src="/images/HouseLogo.png" alt="logotype"> 
                 <p>PBSTROY</p>
             </a>
@@ -19,7 +19,7 @@
         </ul>
         <div id="navbar-contacts">
             <i class="fa fa-phone fa-fw"></i>
-            <a href="tex:+375256440809">+375 (25) 644-08-09</a>
+            <a href="tel:+375256440809">+375 (25) 644-08-09</a>
             <br>
             <i class="fa fa-envelope-o fa-fw"></i>
             <a href="mailto:pbstroi@gmail.com">pbstroi@gmail.com</a>

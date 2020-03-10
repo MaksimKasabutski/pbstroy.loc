@@ -2,8 +2,11 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Отзывы о строительных работах компании PBstroy. Строительство домов в Минске и минской области. Выполнение кладочных, кровельных и монолитных работ любой сложности.
+    Заливка фундамента под ключ и другие строительные работы. Многолетний опыт работы. Качество гарантируем!">
+    <meta name="robots" content="index, follow"/> 
     <title>Отзывы - PBstroy - Строительство домов под ключ</title>
 	<link rel="stylesheet" href="/style.css"> 
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
@@ -27,7 +30,6 @@
 	$count_of_feedbacks_on_page = 10; 
 	$feedback_number = ($page * $count_of_feedbacks_on_page) - $count_of_feedbacks_on_page;
 	
-
     $all_feedbacks_query = "SELECT * FROM `feedbacks` ORDER BY ID DESC LIMIT $feedback_number, $count_of_feedbacks_on_page ";
     $result = mysqli_query($link, $all_feedbacks_query) or die( mysqli_error($link) );
 	for ($data = []; $row = mysqli_fetch_assoc($result); $data[] = $row);

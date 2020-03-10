@@ -2,8 +2,11 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Цены на строительные услуги компании PBstroy. Строительство домов в Минске и минской области. Выполнение кладочных, кровельных и монолитных работ любой сложности.
+    Заливка фундамента под ключ и другие строительные работы. Многолетний опыт работы. Качество гарантируем!">
+    <meta name="robots" content="index, follow"/> 
     <title>Цены - PBstroy - Строительство домов под ключ</title>
 	<link rel="stylesheet" href="/style.css"> 
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
@@ -89,7 +92,7 @@
                     <div class="price-table-inner-section">8 у.е. шт.</div>
                 </div>    
             </div>
-            <p class="price-note">* Внимамание, цены в иностранной валюте указаны справочно. Все расчёты осуществляются в белорусских рублях в соответствии с законодательством РБ.</p>
+            <p class="price-note">* Внимание, цены в иностранной валюте указаны справочно. Все расчёты осуществляются в белорусских рублях в соответствии с законодательством РБ.</p>
         </div>
     </section>
 </div>
