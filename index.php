@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="yandex-verification" content="03efec4a67c4c434" />
     <meta name="description" content="Строительство домов в Минске и минской области. Выполнение кладочных, кровельных и монолитных работ любой сложности.
     Заливка фундамента под ключ и другие строительные работы. Многолетний опыт работы. Качество гарантируем!">
     <meta name="robots" content="index, follow"/>
     <meta name="keywords" content="строительство домов, строительные работы, построить дом, кладка, кровля, монолитные работы, фундамент, минск, минская область"/>
     <title>PBstroy - Cтроительство домов и коттеджей под ключ</title>
 	<link rel="stylesheet" href="/style.css"> 
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://pbstroy.by/favicon.ico" type="image/x-icon">
     <link href="/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

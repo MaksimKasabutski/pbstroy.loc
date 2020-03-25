@@ -9,7 +9,7 @@
     <meta name="robots" content="index, follow"/> 
     <title>Отзывы - PBstroy - Строительство домов под ключ</title>
 	<link rel="stylesheet" href="/style.css"> 
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://pbstroy.by/favicon.ico" type="image/x-icon">
     <link href="/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,8 +17,8 @@
 <body>
     <?php 
     $host = 'localhost';
-    $user = 'root';
-    $password = '1234';
+    $user = 'pbstroyb';
+    $password = 'maksim9890292';
     $db_name = 'pbstroy';
 
     $link = mysqli_connect($host, $user, $password, $db_name);
@@ -30,6 +30,7 @@
 	$count_of_feedbacks_on_page = 10; 
 	$feedback_number = ($page * $count_of_feedbacks_on_page) - $count_of_feedbacks_on_page;
 	
+
     $all_feedbacks_query = "SELECT * FROM `feedbacks` ORDER BY ID DESC LIMIT $feedback_number, $count_of_feedbacks_on_page ";
     $result = mysqli_query($link, $all_feedbacks_query) or die( mysqli_error($link) );
 	for ($data = []; $row = mysqli_fetch_assoc($result); $data[] = $row);

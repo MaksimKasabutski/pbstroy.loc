@@ -104,59 +104,29 @@ $(document).ready(function(){
 });
 
 
-
-
-/*SERVICES NAVIGATION BAR for L screen*/
-$(document).ready(function(){
-  $("#nav-list-item-roofservices").click(function() {
-      $(".nav-front-L-services").css({'margin-left' : '90px', 'width' : '195px'})
-      $(".service-tab-roof").css({'display' : 'block'})
-      $(".service-tab-masonry").css({'display' : 'none'})
-      $(".service-tab-base").css({'display' : 'none'})
-  });
-});
-$(document).ready(function(){
-  $("#nav-list-item-masonryservices").click(function() {
-      $(".nav-front-L-services").css({'margin-left' : '471.5px', 'width' : '185px'}) 
-      $(".service-tab-roof").css({'display' : 'none'})
-      $(".service-tab-masonry").css({'display' : 'block'})
-      $(".service-tab-base").css({'display' : 'none'})
-  });
-});
-$(document).ready(function(){
-  $("#nav-list-item-baseservices").click(function() {
-      $(".nav-front-L-services").css({'margin-left' : '882.5px', 'width' : '115px'})
-      $(".service-tab-roof").css({'display' : 'none'})
-      $(".service-tab-masonry").css({'display' : 'none'})
-      $(".service-tab-base").css({'display' : 'block'}) 
-  });
-}); 
-
-/*SERVICES NAVIGATION BAR for M screen*/
-$(document).ready(function(){
-  $("#nav-list-item-roofservices").click(function() {
-      $(".nav-front-M-services").css({'margin-left' : '36px', 'width' : '166px'})
-      $(".service-tab-roof").css({'display' : 'block'})
-      $(".service-tab-masonry").css({'display' : 'none'})
-      $(".service-tab-base").css({'display' : 'none'})
-  });
-});
-$(document).ready(function(){
-  $("#nav-list-item-masonryservices").click(function() {
-      $(".nav-front-M-services").css({'margin-left' : '277.75px', 'width' : '157px'}) 
-      $(".service-tab-roof").css({'display' : 'none'})
-      $(".service-tab-masonry").css({'display' : 'block'})
-      $(".service-tab-base").css({'display' : 'none'})
-  });
-});
-$(document).ready(function(){
-  $("#nav-list-item-baseservices").click(function() {
-      $(".nav-front-M-services").css({'margin-left' : '544.5px', 'width' : '99px'})
-      $(".service-tab-roof").css({'display' : 'none'})
-      $(".service-tab-masonry").css({'display' : 'none'})
-      $(".service-tab-base").css({'display' : 'block'}) 
-  });
-}); 
+/*SERVICES NAVIGATION BAR*/
+var winWidth = window.innerWidth;
+if (window.location.pathname == '/services.php/roof' || window.location.pathname == '/services.php') {
+  if (winWidth >= 767 && winWidth <= 1199) {
+    $(".nav-front-services").css({'margin-left' : '36px', 'width' : '166px'})
+  } else if (winWidth >= 1200) {
+    $(".nav-front-services").css({'margin-left' : '90px', 'width' : '195px'})
+  }
+}
+if (window.location.pathname == '/services.php/masonry') {
+  if (winWidth >= 767 && winWidth <= 1199) {
+    $(".nav-front-services").css({'margin-left' : '277.75px', 'width' : '157px'}) 
+  } else if (winWidth >= 1200) {
+    $(".nav-front-services").css({'margin-left' : '471.5px', 'width' : '185px'})
+  }
+}
+if (window.location.pathname == '/services.php/base') {
+  if (winWidth >= 767 && winWidth <= 1199) {
+    $(".nav-front-services").css({'margin-left' : '544.5px', 'width' : '99px'})
+  } else if (winWidth >= 1200) {
+    $(".nav-front-services").css({'margin-left' : '882.5px', 'width' : '115px'})
+  }
+}
 
 function open_mobile_menu(){
   var navbar_mobile_menu = document.getElementsByClassName("navbar");

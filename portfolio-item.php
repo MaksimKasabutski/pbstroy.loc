@@ -10,7 +10,7 @@
     <title><?php $objectname = $_GET['objectname'];
     echo $objectname?> - Портфолио - PBstroy</title>
 	<link rel="stylesheet" href="/style.css"> 
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://pbstroy.by/favicon.ico" type="image/x-icon">
     <link href="/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
